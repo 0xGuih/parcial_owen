@@ -154,7 +154,7 @@ ars_in.addEventListener("keyup", () => {
     let value = parseFloat(ars_in.value);
     if(value){
         ars_in.classList.remove("input_error");
-        usd_out_calculated = value * buy_rate;
+        usd_out_calculated = value / buy_rate;
     } 
     else{
         ars_in.classList.add("input_error");
