@@ -136,7 +136,7 @@ usd_in.addEventListener("keyup", () => {
     let value = parseFloat(usd_in.value);
     if(value){
         usd_in.classList.remove("input_error");
-        ars_out_calculated = value * sell_rate;
+        ars_out_calculated = (value * sell_rate).toFixed(2);
     } 
     else{
         usd_in.classList.add("input_error");
@@ -154,7 +154,7 @@ ars_in.addEventListener("keyup", () => {
     let value = parseFloat(ars_in.value);
     if(value){
         ars_in.classList.remove("input_error");
-        usd_out_calculated = value / buy_rate;
+        usd_out_calculated = (value / buy_rate).toFixed(2);
     } 
     else{
         ars_in.classList.add("input_error");
