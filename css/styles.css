@@ -1,0 +1,23 @@
+@font-face {
+    font-family: AppFont;
+    src: url(/resources/fonts/Roboto-Medium.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #ffbf75;*/
+    background-color: #525558;
+    font-family: AppFont;
+    height: 100vh;
+    min-width: 300px;
+}
+
